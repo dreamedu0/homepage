@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>소속·업무 소개</title>
+<meta name="description" content="하는 일, 활동 지역, 이 업무가 필요한 분, 다른 점과 일하는 원칙을 소개합니다.">
+<link rel="canonical" href="about.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="소속·업무 소개">
+<meta property="og:description" content="하는 일, 활동 지역, 이 업무가 필요한 분, 다른 점과 일하는 원칙을 소개합니다.">
+<meta property="og:url" content="about.html">
+<meta property="og:image" content="images/og.jpg">
+<meta name="theme-color" content="#7c3aed">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-title="{region} {field} 소개" data-desc="{name}은(는) {region}에서 {audience}을(를) 위한 {field} 업무를 합니다. 하는 일과 다른 점, 일하는 원칙을 소개합니다.">
+<header id="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div id="hero-bg" aria-hidden="true"><span class="blob blob--1"></span><span class="grain"></span></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="현재 위치"><a href="index.html">홈</a><span>/</span><span>소개</span></nav>
+      <p class="overline rise">About</p>
+      <h1 class="rise"><span data-k="name" data-ph="회사 이름"></span>이 하는 일</h1>
+      <p class="lead rise" data-k="field" data-ph="업무/전문분야 (한 줄)"></p>
+    </div>
+  </section>
+
+  <!-- 하는 일 · 지역 · 대상 -->
+  <section class="section" style="padding-top:0">
+    <div class="container profile">
+      <div class="media ratio-4-5 media-zoom reveal" data-file="space-1.jpg">
+        <img src="images/space-1.jpg" alt="업무 공간 사진" loading="lazy" onerror="this.parentNode.classList.add('is-empty')">
+      </div>
+      <div class="reveal">
+        <p class="overline">Our story</p>
+        <h2>어떤 일을, 누구와 함께 하나요</h2>
+        <div class="text-block" style="margin-top:24px" data-k="intro" data-ph="소속·업무 이야기 — 어떤 일을 왜 하게 되었는지, 어떤 분들과 일하는지"></div>
+        <dl class="meta-list">
+          <div data-opt-row><dt>활동 지역</dt><dd data-k="region" data-ph="주요 활동 지역"></dd></div>
+          <div data-opt-row><dt>위치</dt><dd data-k="address" data-ph="사무실·연구소 위치"></dd></div>
+          <div data-opt-row><dt>이런 분과 일합니다</dt><dd data-k="audience" data-ph="이 업무를 필요로 하는 분"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 다른 점 -->
+  <section class="section section--dark" data-opt>
+    <div class="container">
+      <p class="overline">Difference</p>
+      <p class="quote reveal" data-k="difference" data-ph="비슷한 업무와 다른 점"></p>
+      <div class="glass-grid" data-render="strengths"></div>
+    </div>
+  </section>
+
+  <!-- 일하는 원칙 -->
+  <section class="section" data-opt>
+    <div class="container split">
+      <div class="sticky">
+        <p class="overline">Principles</p>
+        <h2>업무를 대하는 원칙</h2>
+        <p class="lead">맡은 일을 어떤 기준으로 진행하는지 미리 알려 드립니다.</p>
+      </div>
+      <div data-render="principles"></div>
+    </div>
+  </section>
+
+  <!-- 이런 분께 -->
+  <section class="section section--soft" data-opt>
+    <div class="container split">
+      <div class="sticky">
+        <p class="overline">For you</p>
+        <h2>이런 분께 필요합니다</h2>
+        <div class="btn-row"><a class="btn btn-primary" data-mail data-icon="mail">이메일로 상황 알려 주기</a></div>
+      </div>
+      <div data-render="audience"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sec-head"><p class="overline">Next</p><h2>이어서 살펴보기</h2></div>
+      <div class="next-links">
+        <a class="next-link" href="expert.html" data-icon-after="arrow"><span><small>누가 맡나요</small>담당자 소개</span></a>
+        <a class="next-link" href="services.html" data-icon-after="arrow"><span><small>무엇을 하나요</small>대표 업무 비교</span></a>
+        <a class="next-link" href="contact.html" data-icon-after="arrow"><span><small>어떻게 문의하나요</small>문의·위치</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

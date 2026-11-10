@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>대표 업무</title>
+<meta name="description" content="대표 업무 3가지의 대상, 내용, 범위, 소요 시간을 한눈에 비교합니다.">
+<link rel="canonical" href="services.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="대표 업무">
+<meta property="og:description" content="대표 업무 3가지의 대상, 내용, 범위, 소요 시간을 한눈에 비교합니다.">
+<meta property="og:url" content="services.html">
+<meta property="og:image" content="images/og.jpg">
+<meta name="theme-color" content="#7c3aed">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-title="{region} {field} 대표 업무 안내" data-desc="{region} {name}의 대표 업무별 대상, 내용, 범위, 소요 시간을 비교해 보세요.">
+<header id="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div id="hero-bg" aria-hidden="true"><span class="blob blob--1"></span><span class="grain"></span></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="현재 위치"><a href="index.html">홈</a><span>/</span><span>대표 업무</span></nav>
+      <p class="overline rise">Services</p>
+      <h1 class="rise">대표 업무 한눈에 보기</h1>
+      <p class="lead rise">업무마다 누구에게 필요한지, 어떤 고민을 해결하는지 정리했습니다. 내게 맞는 업무를 고른 뒤 상세 안내에서 범위와 진행 과정을 확인하세요.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="svc-grid" data-render="services-cards"></div>
+    </div>
+  </section>
+
+  <section class="section section--soft" data-opt>
+    <div class="container">
+      <div class="sec-head">
+        <p class="overline">Compare</p>
+        <h2>대상 · 내용 · 범위 · 소요 시간 비교</h2>
+        <p class="lead">휴대폰에서는 표를 옆으로 밀어 볼 수 있습니다.</p>
+      </div>
+      <div data-render="services-table"></div>
+    </div>
+  </section>
+
+  <section class="section" data-opt>
+    <div class="container">
+      <div class="sec-head">
+        <p class="overline">Process</p>
+        <h2>모든 업무는 이 순서로 진행합니다</h2>
+      </div>
+      <div class="steps" data-render="process"></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>어떤 업무가 맞는지 모르겠다면, 지금 상황만 알려 주세요</h2>
+        <p data-k="contactMethod" data-ph="문의 방법"></p>
+        <div class="btn-row">
+          <a class="btn btn-primary" data-mail data-icon="mail">이메일로 문의하기</a>
+          <a class="btn btn-ghost" href="faq.html">자주 묻는 질문 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://[배포 후 입력] 부분을 실제 홈페이지 주소로 모두 바꾸세요. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://[배포 후 입력]/</loc></url>
+  <url><loc>https://[배포 후 입력]/about.html</loc></url>
+  <url><loc>https://[배포 후 입력]/expert.html</loc></url>
+  <url><loc>https://[배포 후 입력]/services.html</loc></url>
+  <url><loc>https://[배포 후 입력]/service-1.html</loc></url>
+  <url><loc>https://[배포 후 입력]/service-2.html</loc></url>
+  <url><loc>https://[배포 후 입력]/service-3.html</loc></url>
+  <url><loc>https://[배포 후 입력]/faq.html</loc></url>
+  <url><loc>https://[배포 후 입력]/contact.html</loc></url>
+</urlset>

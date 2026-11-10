@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>담당자 소개</title>
+<meta name="description" content="담당자의 전문 분야, 자격, 활동과 이 업무를 믿고 맡길 수 있는 근거를 소개합니다.">
+<link rel="canonical" href="expert.html">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="담당자 소개">
+<meta property="og:description" content="담당자의 전문 분야, 자격, 활동과 이 업무를 믿고 맡길 수 있는 근거를 소개합니다.">
+<meta property="og:url" content="expert.html">
+<meta property="og:image" content="images/og.jpg">
+<meta name="theme-color" content="#7c3aed">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-title="{field} 담당자 {role} 소개" data-desc="{name} {role}의 전문 분야({field})와 자격·활동을 소개합니다.">
+<header id="site-header"></header>
+
+<main>
+  <section class="page-hero">
+    <div id="hero-bg" aria-hidden="true"><span class="blob blob--1"></span><span class="grain"></span></div>
+    <div class="container">
+      <nav class="breadcrumb" aria-label="현재 위치"><a href="index.html">홈</a><span>/</span><span>담당자</span></nav>
+      <p class="overline rise">Expert</p>
+      <h1 class="rise">이 업무를 맡는 사람</h1>
+      <p class="lead rise" data-k="role" data-ph="직책·역할"></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container profile">
+      <div class="media arch ratio-4-5 reveal" data-file="profile-1.jpg">
+        <img src="images/profile-1.jpg" alt="담당자 사진" loading="lazy" onerror="this.parentNode.classList.add('is-empty')">
+      </div>
+      <div class="reveal">
+        <p class="overline">Profile</p>
+        <h2 data-k="name" data-ph="소속·내 이름"></h2>
+        <dl class="meta-list">
+          <div data-opt-row><dt>직책·역할</dt><dd data-k="role" data-ph="직책·역할"></dd></div>
+          <div data-opt-row><dt>전문분야</dt><dd data-k="field" data-ph="업무/전문분야"></dd></div>
+          <div data-opt-row><dt>활동 지역</dt><dd data-k="region" data-ph="주요 활동 지역"></dd></div>
+        </dl>
+        <div class="btn-row"><a class="btn btn-primary" data-mail data-icon="mail">담당자에게 이메일로 문의하기</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 믿고 맡길 수 있는 근거 (확인된 정보만) -->
+  <section class="section section--soft" data-opt>
+    <div class="container">
+      <div class="sec-head">
+        <p class="overline">Credentials</p>
+        <h2>믿고 맡길 수 있는 근거</h2>
+        <p class="lead">확인된 자격과 활동만 적었습니다.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-item" data-opt-row><h3>담당 분야·자격·학력</h3><ul class="chips" data-render="chips" data-src="credentials" data-ph="담당 분야·자격·학력"></ul></div>
+        <div class="info-item" data-opt-row><h3>협력 기관</h3><ul class="chips" data-render="chips" data-src="partners" data-ph="협력 기관 (공개 가능한 것만)"></ul></div>
+        <div class="info-item" data-opt-row><h3>수상·저서·언론·전문 활동</h3><ul class="chips" data-render="chips" data-src="activities" data-ph="수상·저서·전문 활동"></ul></div>
+        <div class="info-item" data-opt-row><h3>가장 큰 강점</h3><p data-k="strength" data-ph="내 업무의 가장 큰 강점"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark" data-opt>
+    <div class="container">
+      <p class="overline">Approach</p>
+      <p class="quote reveal" data-k="difference" data-ph="비슷한 업무와 다른 점"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="sec-head"><p class="overline">Next</p><h2>담당자가 맡는 업무</h2></div>
+      <div class="svc-grid" data-render="services-cards"></div>
+      <div class="btn-row"><a class="btn btn-ghost" href="faq.html">자주 묻는 질문 보기</a></div>
+    </div>
+  </section>
+</main>
+
+<footer id="site-footer"></footer>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
